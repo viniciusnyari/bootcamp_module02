@@ -18,6 +18,12 @@ class UserController {
       provider,
     });
   }
+
+  async update(req, res) {
+    /* Esse método faz a leitura do userId que foi passado dentro do res */
+    console.log(req.userId);
+    return res.json({ ok: true });
+  }
 }
 
 export default new UserController();
