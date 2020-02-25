@@ -30,6 +30,13 @@ class User extends Model {
     return this;
   }
 
+  /* Chave estrangeira de Users.avatar_id com Files.id
+     Esse 'as' coloca um alias que é usado no ProviderController
+  */
+  static associate(models) {
+    this.belongsTo(models.File, { foreignKey: 'avatar_id', as: 'avatar' });
+  }
+
   checkPassword(password) {
     return bcrypt.compare(password, this.password_hash);
   }
