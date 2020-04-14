@@ -67,6 +67,12 @@ class AppointmentController {
         .json({ error: 'You can only appointments with providers.' });
     }
 
+    if (provider_id === req.userId) {
+      return res
+        .status(401)
+        .json({ error: 'The same user cannot do appointments for himself.' });
+    }
+
     /**
      * Check for past dates
      * Pega somente a hora (sem minutos) de date - ParseIso retorna um Date
