@@ -220,8 +220,13 @@ yarn add mongoose
 Baixar o MongoDB Compass e conectar usando localhost e a porta 27017
 O sistema criará um novo database chamado gobarber conforme especificado no código para armazenar as notificações
 
-43) Enviando e-mails - nodemailer
+43) Biblioteca para envio de e-mails - nodemailer
 yarn add nodemailer
+
+44) Enviando e-mails - mailtrap - acesse no google e crie uma conta - funciona somente em DEV
+Crie uma conta e uma caixa de e-mail chamada GoBarber
+https://mailtrap.io/inboxes/892239/messages/1659665495
+
 
 yarn sucrase-node src/server.js
 
