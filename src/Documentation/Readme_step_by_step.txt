@@ -220,6 +220,8 @@ yarn add mongoose
 Baixar o MongoDB Compass e conectar usando localhost e a porta 27017
 O sistema criará um novo database chamado gobarber conforme especificado no código para armazenar as notificações
 
+43) Enviando e-mails - nodemailer
+yarn add nodemailer
 
 yarn sucrase-node src/server.js
 
@@ -227,14 +229,14 @@ yarn sucrase-node src/server.js
 tokens - alterado o token da aplicação para provider
 ------------------------------------------------------------------------------------------------
 token de 'Vinicius provider'
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNTg1NzAzMTQ1LCJleHAiOjE1ODYzMDc5NDV9.9udbbvjYzfoA0AP8Er5fsQWfbsFc6i19WiJattxgcUA
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNTg2OTEwMDAxLCJleHAiOjE1ODc1MTQ4MDF9.qvHuQVeZJUc83pssRMuyB-scum_AdEXBSnfQHumMADs
 
 token de 'Vinicius user'
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTg1NTI4MDMzLCJleHAiOjE1ODYxMzI4MzN9.FT-W6Tj0BxlFFADJ9R6X3Eg1tjmBc26F96vgonx_a7k
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTg2OTEwMDkzLCJleHAiOjE1ODc1MTQ4OTN9.8LrVHkF1bnRH5LkFApbngMetp5SFahrvuL4le5lInMA
 
 
 
-
+C:\Temp\Bootcamp2019\bootcamp_modulo02
 
 
 
