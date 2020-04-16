@@ -228,6 +228,8 @@ Crie uma conta e uma caixa de e-mail chamada GoBarber
 https://mailtrap.io/inboxes/892239/messages/1659665495
 
 45) Template engine - usando template para customizar os e-mails
+handlebars - https://handlebarsjs.com/
+yarn add express-handlebars nodemailer-express-handlebars
 
 
 yarn sucrase-node src/server.js
