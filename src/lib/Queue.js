@@ -33,8 +33,17 @@ class Queue {
   processQueue() {
     jobs.forEach(job => {
       const { bee, handle } = this.queues[job.key];
-      bee.process(handle);
+
+      // on permite ouvir o evento de falha
+      // bee-queue tem vários tipos de eventos que podem ser ouvidos
+      // https://github.com/bee-queue/bee-queue
+      bee.on('failed', this.HandleFailure).process(handle);
     });
+  }
+
+  // Tratamento do erro
+  HandleFailure(job, err) {
+    console.log(`Queue: ${job.queue.name}: FAILED`, err);
   }
 }
 
