@@ -231,6 +231,15 @@ https://mailtrap.io/inboxes/892239/messages/1659665495
 handlebars - https://handlebarsjs.com/
 yarn add express-handlebars nodemailer-express-handlebars
 
+46) Trabalhando com backgroud jobs - persistindo no Redis (banco de dados chave valor superperformático)
+Instalando imagem do redis no docker
+docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
+52e54c235851e2b1bfa7e01ba4aec79fa0d5b72141bb983a8369ed2d0217c13a
+
+47) Instalando bee-queue - para trabalhar com filas - https://github.com/bee-queue/bee-queue
+yarn add bee-queue
+
+
 
 yarn sucrase-node src/server.js
 
