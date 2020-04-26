@@ -258,6 +258,13 @@ yarn add express-async-errors
 #Vizualizando os eventos do Sentry
 https://sentry.io/organizations/vinas-inc/issues/1631262223/?project=5213782
 
+#youch -  realiza uma tratativa melhor dos erros
+yarn add youch
+
+#Instalar extensão 'dotenv' para fazer uso das variáveis de ambiente em um arquivo '.env'
+yarn add dotenv
+Apartir desse momento, basta digitar essa linha 'process.env.APP_SECRET' para apresentar o valor do arquivo
+
 
 yarn sucrase-node src/server.js
 
