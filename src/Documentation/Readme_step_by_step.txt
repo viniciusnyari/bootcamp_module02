@@ -249,10 +249,10 @@ yarn sucrase-node src/server.js
 ------------------------------------------------------------------------------------------------
 tokens - alterado o token da aplicação para provider
 ------------------------------------------------------------------------------------------------
-token de 'Vinicius provider'
+token de 'Vinicius provider' - called 'providerToken'
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNTg3ODY1MjY4LCJleHAiOjE1ODg0NzAwNjh9.xH8EExjMPt3m2VY1Yex1uUqxSbmJfsRnYRK9hkBHDuY
 
-token de 'Vinicius user'
+token de 'Vinicius user' - called 'userToken'
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTg3ODY1MzQzLCJleHAiOjE1ODg0NzAxNDN9.W2SYWwV4DgAmoq8hHEBxMJsPeWakdnA0c6QGbg-7Y9A
 
 123456789 = '$2a$08$8U.tbbqCGIrLEtYlAyR9KOPCo5dIy1h0GJhWQrJXtHHJ5TDyYnX4y'
