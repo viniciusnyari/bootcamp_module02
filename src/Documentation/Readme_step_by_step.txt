@@ -239,6 +239,9 @@ docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
 47) Instalando bee-queue - para trabalhar com filas - https://github.com/bee-queue/bee-queue
 yarn add bee-queue
 
+#Obter Unix Timestamp de uma data
+Ou usa-se a ferramenta de Console do Chrome ou https://www.unixtimestamp.com/
+new Date().getTime()
 
 
 yarn sucrase-node src/server.js
@@ -247,12 +250,12 @@ yarn sucrase-node src/server.js
 tokens - alterado o token da aplicação para provider
 ------------------------------------------------------------------------------------------------
 token de 'Vinicius provider'
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNTg2OTEwMDAxLCJleHAiOjE1ODc1MTQ4MDF9.qvHuQVeZJUc83pssRMuyB-scum_AdEXBSnfQHumMADs
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNTg3ODY1MjY4LCJleHAiOjE1ODg0NzAwNjh9.xH8EExjMPt3m2VY1Yex1uUqxSbmJfsRnYRK9hkBHDuY
 
 token de 'Vinicius user'
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTg2OTEwMDkzLCJleHAiOjE1ODc1MTQ4OTN9.8LrVHkF1bnRH5LkFApbngMetp5SFahrvuL4le5lInMA
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTg3ODY1MzQzLCJleHAiOjE1ODg0NzAxNDN9.W2SYWwV4DgAmoq8hHEBxMJsPeWakdnA0c6QGbg-7Y9A
 
-
+123456789 = '$2a$08$8U.tbbqCGIrLEtYlAyR9KOPCo5dIy1h0GJhWQrJXtHHJ5TDyYnX4y'
 
 C:\Temp\Bootcamp2019\bootcamp_modulo02
 
