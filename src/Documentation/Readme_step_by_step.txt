@@ -243,6 +243,21 @@ yarn add bee-queue
 Ou usa-se a ferramenta de Console do Chrome ou https://www.unixtimestamp.com/
 new Date().getTime()
 
+#Sentry.io - Tratamento de exceções da aplicação - http://sentry.io
+Logar com o perfil do github
+Criar um projeto com o nome que desejar em um dos tipo:'express' ou 'node'
+yarn add @sentry/node@5.15.5
+
+#Guarde esse dns do sentry
+https://sentry.io/onboarding/vinas-inc/get-started/
+Sentry.init({ dsn: 'https://c18738d8be544ecf9d698085a298a057@o383562.ingest.sentry.io/5213782' });
+
+#Resolvendo conflitos entre o 'express' e o 'Sentry' em função dos métodos async do 'express'
+yarn add express-async-errors
+
+#Vizualizando os eventos do Sentry
+https://sentry.io/organizations/vinas-inc/issues/1631262223/?project=5213782
+
 
 yarn sucrase-node src/server.js
 
