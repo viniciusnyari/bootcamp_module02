@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import express from 'express';
 import path from 'path';
+import cors from 'cors';
 import Youch from 'youch';
 import * as Sentry from '@sentry/node';
 import 'express-async-errors';
@@ -24,6 +25,15 @@ class App {
   middlewares() {
     // The request handler must be the first middleware on the app
     this.server.use(Sentry.Handlers.requestHandler());
+
+    /*
+    Define o cors que vai permitir que outros locais acessem o backend
+    Como não temos parâmetros no construtor, permitirá qualquer acesso
+    pois estamos em ambiente de desenvolvimento, mas em produção,
+    precisamos informar o 'origin:http://seuendereco.com.br',
+    que aí somente será permitido acesso a partir dessa origem
+    */
+    this.server.use(cors());
 
     this.server.use(express.json());
 

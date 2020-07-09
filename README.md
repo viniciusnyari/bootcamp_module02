@@ -243,6 +243,9 @@ docker run --name redisbarber -p 6379:6379 -d -t redis:alpine<br>
 yarn add bee-queue
 
 
+## Instalando `Cors` - Permite que outras aplicações acessem nosso backend
+yarn add cors
+
 
 ##  Rodando a aplicação
 yarn sucrase-node src/server.js
@@ -259,3 +262,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTg2OTEwMDkzLCJleHAiOjE
 
 ##  Local
 C:\Temp\Bootcamp2019\bootcamp_modulo02
+
+
+https://app.rocketseat.com.br/node/gobarber-web
+Parei no 03:21
