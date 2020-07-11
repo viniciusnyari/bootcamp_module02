@@ -262,20 +262,18 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNTg2OTEwMDAxLCJleHAiOjE
 token de 'Vinicius user'<br>
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTk0NDcyNTg4LCJleHAiOjE1OTUwNzczODh9.xqSIABwrP8U-8_0j8xwr_RPzpjvAuLg6RUctBETv4Uc<br>
 
-##  Local
+##  Informações locais
 C:\Temp\Bootcamp2019\bootcamp_modulo02
-
-
 https://app.rocketseat.com.br/node/gobarber-web
-Parei no 03:21
+
 
 ## Passos importantes para o backend funcionar
 
 ### Deixar os serviços do docker rodando - subir docker desktop
-PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker ps -a
-PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker start database
-PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker start mongobarber
-PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker start redisbarber
+PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker ps -a <br>
+PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker start database <br>
+PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker start mongobarber <br>
+PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker start redisbarber <br>
 
 ### Deixar rodando o servidor backend
 Em um outro terminal, acessar essa pasta `C:\Temp\Bootcamp2019\bootcamp_modulo02` e rodar `yarn sucrase-node src/server.js`
