@@ -246,6 +246,8 @@ yarn add bee-queue
 ## Instalando `Cors` - Permite que outras aplicações acessem nosso backend
 yarn add cors
 
+##Habilitando a virtualização
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 
 ##  Rodando a aplicação
 yarn sucrase-node src/server.js
@@ -258,7 +260,7 @@ token de 'Vinicius provider'<br>
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNTg2OTEwMDAxLCJleHAiOjE1ODc1MTQ4MDF9.qvHuQVeZJUc83pssRMuyB-scum_AdEXBSnfQHumMADs<br>
 
 token de 'Vinicius user'<br>
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTg2OTEwMDkzLCJleHAiOjE1ODc1MTQ4OTN9.8LrVHkF1bnRH5LkFApbngMetp5SFahrvuL4le5lInMA<br>
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTk0NDcyNTg4LCJleHAiOjE1OTUwNzczODh9.xqSIABwrP8U-8_0j8xwr_RPzpjvAuLg6RUctBETv4Uc<br>
 
 ##  Local
 C:\Temp\Bootcamp2019\bootcamp_modulo02
@@ -266,3 +268,15 @@ C:\Temp\Bootcamp2019\bootcamp_modulo02
 
 https://app.rocketseat.com.br/node/gobarber-web
 Parei no 03:21
+
+## Passos importantes para o backend funcionar
+
+### Deixar os serviços do docker rodando - subir docker desktop
+PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker ps -a
+PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker start database
+PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker start mongobarber
+PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker start redisbarber
+
+### Deixar rodando o servidor backend
+Em um outro terminal, acessar essa pasta `C:\Temp\Bootcamp2019\bootcamp_modulo02` e rodar `yarn sucrase-node src/server.js`
+

@@ -22,7 +22,7 @@ class SessionController {
       where: { email },
       include: [
         {
-          model: 'File',
+          model: File,
           as: 'avatar',
           attributes: ['id', 'path', 'url'],
         },
@@ -36,13 +36,14 @@ class SessionController {
       return res.status(401).json({ error: 'Password does not match' });
     }
 
-    const { id, name, avatar } = user;
+    const { id, name, avatar, provider } = user;
 
     return res.json({
       user: {
         id,
         name,
         email,
+        provider,
         avatar,
       },
       token: jwt.sign({ id }, authConfig.secret, {
