@@ -8,13 +8,13 @@ class SessionController {
   async store(req, res) {
     const schema = Yup.object().shape({
       email: Yup.string()
-        .email()
-        .required(),
-      password: Yup.string().required(),
+        .email('O e-mail é inválido!')
+        .required('O e-mail é obrigatório!'),
+      password: Yup.string().required('A senha é obrigatório!'),
     });
 
     if (!(await schema.isValid(req.body))) {
-      return res.status(400).json({ error: 'Validation fail.' });
+      return res.status(400).json({ error: 'Verifique o preenchimento dos campos: e-mail e senha!' });
     }
 
     const { email, password } = req.body;
@@ -30,10 +30,10 @@ class SessionController {
     });
 
     if (!user) {
-      return res.status(401).json({ error: 'User not found' });
+      return res.status(401).json({ error: 'Usuário não encontrado!' });
     }
     if (!(await user.checkPassword(password))) {
-      return res.status(401).json({ error: 'Password does not match' });
+      return res.status(401).json({ error: 'Senhas não conferem!' });
     }
 
     const { id, name, avatar, provider } = user;

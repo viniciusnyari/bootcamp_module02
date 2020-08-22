@@ -46,12 +46,12 @@ class AppointmentController {
 
   async store(req, res) {
     const schema = Yup.object().shape({
-      provider_id: Yup.number().required(),
-      date: Yup.date().required(),
+      provider_id: Yup.number().required('O prestador é obrigatório!'),
+      date: Yup.date().required('A data é obrigatória!'),
     });
 
     if (!(await schema.isValid(req.body))) {
-      return res.status(400).json({ error: 'Validation fails' });
+      return res.status(400).json({ error: 'Verifique o preenchimento dos campos provedor e data!' });
     }
 
     const { provider_id, date } = req.body;
@@ -66,13 +66,13 @@ class AppointmentController {
     if (!isProvider) {
       return res
         .status(401)
-        .json({ error: 'You can only appointments with providers.' });
+        .json({ error: 'Somente prestadores poderão realizar agendamentos!' });
     }
 
     if (provider_id === req.userId) {
       return res
         .status(401)
-        .json({ error: 'The same user cannot do appointments for himself.' });
+        .json({ error: 'O usuário não pode realizar agendamentos para ele mesmo!' });
     }
 
     /**
@@ -81,7 +81,7 @@ class AppointmentController {
      * */
     const hourStart = startOfHour(parseISO(date));
     if (isBefore(hourStart, new Date())) {
-      return res.status(400).json({ error: 'Past dates are not permitted.' });
+      return res.status(400).json({ error: 'Não é permitido realizar um agendamento para o passado!' });
     }
 
     /**
@@ -98,7 +98,7 @@ class AppointmentController {
     if (checkAvailability) {
       return res
         .status(400)
-        .json({ error: 'Appointment date is not available.' });
+        .json({ error: 'Esse horário não está mais disponível!' });
     }
 
     const appointment = await Appointment.create({
@@ -145,7 +145,7 @@ class AppointmentController {
 
     if (appointment.user_id !== req.userId) {
       return res.status(401).json({
-        error: 'You don´t have a permission to cancel this appointment',
+        error: 'Você não tem permissão para cancelar esse agendamento!',
       });
     }
 
@@ -153,7 +153,7 @@ class AppointmentController {
     const dateWithSub = subHours(appointment.date, 2);
     if (isBefore(dateWithSub, new Date())) {
       return res.status(401).json({
-        error: 'You can only cancel appointments 2 hours in advance.',
+        error: 'Você pode realizar cancelamentos somente para agendamentos nas próximas 2 horas!',
       });
     }
 
