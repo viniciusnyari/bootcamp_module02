@@ -278,3 +278,61 @@ PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker start redisbarber <br>
 ### Deixar rodando o servidor backend
 Em um outro terminal, acessar essa pasta `C:\Temp\Bootcamp2019\bootcamp_modulo02` e rodar `yarn sucrase-node src/server.js`
 
+<br>
+# Desafio Backend Personare - Vinícius Nyari - 48 99137 8387 - viniciusnyari@gmail.com
+
+## As cotações
+
+As cotações podem consultar uma API para buscar a cotação online e apartir desse momento, realizar a conversão de origem e destino, porém, em muitos casos, a empresa adota a sua própria cotação, que não é a do mercado. Diante disso, a API abaixo, foi pensada dessa forma, por isso, que a mesma requer o valor a ser convertido (na moeda de origem), a taxa de conversão praticada pela empresa e a moeda de destino nos formatos (BRL - Real, EUR - Euro e USD - Dólar). 
+Abaixo, alguns exemplos de chamadas da API:
+
+- Dólar para Real
+	- http://localhost:53191/ConversaoMoedas/120.5/5.63/BRL
+	- Retorno:
+	{
+		"simbolo": "R$",
+		"valorConvertido": 678.415
+	}
+
+- Euro para Real
+	- http://localhost:53191/ConversaoMoedas/25/6.47/BRL
+	- Retorno:
+	{
+	  "simbolo": "R$",
+	  "valorConvertido": 161.75
+	}
+
+- Real para Dólar
+	- http://localhost:53191/ConversaoMoedas/135.90/0.18/USD
+	- Retorno:
+	{
+	  "simbolo": "$",
+	  "valorConvertido": 24.462
+	}
+
+- Euro para Dólar
+	- http://localhost:53191/ConversaoMoedas/25/1.16/USD
+	- Retorno:
+	{
+	  "simbolo": "$",
+	  "valorConvertido": 28.999999999999996
+	}
+
+- Dólar para Euro
+	- http://localhost:53191/ConversaoMoedas/50.5/0.86/EUR
+	- Retorno:
+	{
+	  "simbolo": "€",
+	  "valorConvertido": 43.43
+	}
+
+- Real para Euro
+	- http://localhost:53191/ConversaoMoedas/85.5/0.15/EUR
+	- Retorno:
+	{
+	  "simbolo": "€",
+	  "valorConvertido": 12.825
+	}
+
+
+
