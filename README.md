@@ -278,8 +278,7 @@ PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker start redisbarber <br>
 ### Deixar rodando o servidor backend
 Em um outro terminal, acessar essa pasta `C:\Temp\Bootcamp2019\bootcamp_modulo02` e rodar `yarn sucrase-node src/server.js`
 
-<br>
-### Desafio Backend Personare - Vinícius Nyari - 48 99137 8387 - viniciusnyari@gmail.com
+## Desafio Backend Personare - Vinícius Nyari - 48 99137 8387 - viniciusnyari@gmail.com
 
 ### As cotações
 
