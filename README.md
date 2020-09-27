@@ -279,9 +279,9 @@ PS C:\Temp\Bootcamp2019\bootcamp_modulo02> docker start redisbarber <br>
 Em um outro terminal, acessar essa pasta `C:\Temp\Bootcamp2019\bootcamp_modulo02` e rodar `yarn sucrase-node src/server.js`
 
 <br>
-# Desafio Backend Personare - Vinícius Nyari - 48 99137 8387 - viniciusnyari@gmail.com
+## Desafio Backend Personare - Vinícius Nyari - 48 99137 8387 - viniciusnyari@gmail.com
 
-## As cotações
+### As cotações
 
 As cotações podem consultar uma API para buscar a cotação online e apartir desse momento, realizar a conversão de origem e destino, porém, em muitos casos, a empresa adota a sua própria cotação, que não é a do mercado. Diante disso, a API abaixo, foi pensada dessa forma, por isso, que a mesma requer o valor a ser convertido (na moeda de origem), a taxa de conversão praticada pela empresa e a moeda de destino nos formatos (BRL - Real, EUR - Euro e USD - Dólar). 
 Abaixo, alguns exemplos de chamadas da API:
